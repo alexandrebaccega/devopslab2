@@ -13,6 +13,19 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
+<<<<<<< HEAD
+        
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.7.11'
+
+      - name: Install Requirements
+        run:  pip install flask
+
+      - name: Unit Test
+        run: python -m unittest -v test
+=======
 
       - name: Setup Python
         uses: actions/setup-python@v2
@@ -24,3 +37,4 @@ jobs:
               
       - name: Unit Test
         run: python -m unittest -v test
+>>>>>>> 29316ba68b70b687fb5a601e7872399d8e0d95b6
